@@ -1,157 +1,54 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Carvajal Motor 24H | Asistencia en carretera en Barcelona</title>
-  <meta name="description" content="Carvajal Motor 24H ofrece asistencia en carretera y reparaciones in situ en Barcelona y alrededores. Servicio de grúa para coches y motocicletas. Consulta disponibilidad.">
-  <meta name="theme-color" content="#101216">
-  <style>
-    :root{--bg:#101216;--panel:#191d23;--yellow:#ffc928;--text:#f6f7f9;--muted:#c2c7d0;--blue:#1688e8}
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
-    a{color:inherit}
-    .wrap{width:min(1120px,92%);margin:auto}
-    header{padding:20px 0;border-bottom:1px solid #30343b;background:#101216}
-    .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
-    .brand{font-weight:900;font-size:1.15rem;letter-spacing:.4px}
-    .brand span{color:var(--yellow)}
-    .navlinks{display:flex;gap:18px;flex-wrap:wrap;font-size:.95rem}
-    .navlinks a{text-decoration:none;color:var(--muted)}
-    .hero{padding:76px 0 64px;background:radial-gradient(ellipse at 80% 20%,#34302a 0,transparent 42%),linear-gradient(135deg,#111318,#20242b)}
-    .tag{display:inline-block;padding:6px 12px;border:1px solid #65501a;border-radius:30px;color:var(--yellow);font-size:.85rem;font-weight:700}
-    h1{font-size:clamp(2.3rem,6vw,4.4rem);line-height:1.04;max-width:800px;margin:22px 0}
-    h1 span{color:var(--yellow)}
-    .hero p{max-width:690px;color:var(--muted);font-size:1.12rem}
-    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
-    .btn{display:inline-block;text-decoration:none;padding:13px 19px;border-radius:10px;font-weight:800}
-    .btn-primary{background:var(--yellow);color:#111}
-    .btn-secondary{border:1px solid #626873;background:transparent}
-    .quick{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:38px}
-    .quick div{background:#ffffff0b;border:1px solid #ffffff17;border-radius:12px;padding:16px}
-    .quick strong{display:block;color:var(--yellow);font-size:1.02rem}
-    section{padding:62px 0}
-    .section-title{font-size:clamp(1.8rem,4vw,2.5rem);margin:0 0 12px}
-    .intro{color:var(--muted);max-width:720px;margin:0 0 28px}
-    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .card{background:var(--panel);border:1px solid #2c313a;border-radius:16px;padding:24px}
-    .icon{font-size:1.8rem}
-    .card h3{margin:12px 0 8px}
-    .card p{color:var(--muted);margin-bottom:0}
-    .notice{margin-top:20px;padding:16px 18px;border-left:4px solid var(--yellow);background:#ffffff09;border-radius:8px;color:var(--muted)}
-    .area{background:#171a20}
-    .area-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}
-    .area-box{background:#20252d;border:1px solid #333943;border-radius:16px;padding:24px}
-    .area-box p{color:var(--muted)}
-    .contact{background:linear-gradient(135deg,#191d23,#242932)}
-    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
-    .phone{font-size:clamp(1.6rem,4vw,2.2rem);font-weight:900;color:var(--yellow);text-decoration:none}
-    footer{padding:24px 0;color:#aeb4be;border-top:1px solid #30343b;font-size:.9rem}
-    footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-    @media(max-width:760px){.quick,.cards,.area-grid,.contact-grid{grid-template-columns:1fr}.hero{padding:54px 0 46px}section{padding:46px 0}.navlinks{gap:12px}.quick{gap:10px}}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carvajal Motor 24H | Asistencia en carretera en Barcelona</title>
+<meta name="description" content="Carvajal Motor 24H: asistencia en carretera, reparaciones in situ, baterías, arranque, pinchazos y asistencia para motocicletas en Barcelona y alrededores.">
+<meta name="theme-color" content="#101216">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://carvajalmotor24h.es/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Carvajal Motor 24H | Asistencia en carretera en Barcelona">
+<meta property="og:description" content="Asistencia en carretera y reparaciones in situ en Barcelona y alrededores.">
+<meta property="og:url" content="https://carvajalmotor24h.es/">
+<style>
+:root{--bg:#0c0f13;--panel:#171c22;--panel2:#20262e;--yellow:#ffc928;--white:#f7f8fa;--muted:#b8c0ca;--line:#303944;--max:1160px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:82px}body{margin:0;background:var(--bg);color:var(--white);font:16px/1.65 Inter,Arial,Helvetica,sans-serif}a{color:inherit}.wrap{width:min(var(--max),92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#0c0f13ed;backdrop-filter:blur(12px);border-bottom:1px solid #ffffff18}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:950;letter-spacing:.5px;font-size:1.12rem;text-decoration:none}.brand b{color:var(--yellow)}.links{display:flex;gap:22px;align-items:center;flex-wrap:wrap}.links a{text-decoration:none;color:#d0d5dc;font-size:.92rem}.links a:hover{color:var(--yellow)}.nav-cta{background:var(--yellow);color:#111!important;padding:9px 15px;border-radius:8px;font-weight:900}
+.hero{position:relative;min-height:650px;display:flex;align-items:center;overflow:hidden;background:linear-gradient(90deg,#080b0feF 0%,#080b0fbf 48%,#080b0f36 100%),url('assets/flota-gruas-juntas.jpg') center 45%/cover no-repeat}.hero:after{content:"";position:absolute;inset:auto 0 0;height:120px;background:linear-gradient(transparent,var(--bg))}.hero-inner{position:relative;z-index:1;padding:95px 0 115px;max-width:780px}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--yellow);font-weight:850;letter-spacing:1.7px;text-transform:uppercase;font-size:.78rem}.eyebrow:before{content:"";width:28px;height:2px;background:var(--yellow)}h1{font-size:clamp(2.65rem,6vw,5.1rem);line-height:1.02;letter-spacing:-2px;margin:20px 0 22px}h1 span{color:var(--yellow)}.hero p{max-width:640px;color:#e0e4e9;font-size:1.15rem}.actions{display:flex;gap:13px;flex-wrap:wrap;margin:30px 0}.btn{display:inline-flex;justify-content:center;align-items:center;gap:9px;padding:14px 20px;border-radius:9px;text-decoration:none;font-weight:900;transition:.2s}.btn:hover{transform:translateY(-2px)}.primary{background:var(--yellow);color:#101216}.secondary{border:1px solid #ffffff70;background:#111820b8}.micro{font-size:.9rem;color:#d1d7df}.trustbar{position:relative;z-index:2;margin-top:-30px}.trustgrid{display:grid;grid-template-columns:repeat(4,1fr);background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 18px 45px #0005}.trustitem{padding:23px 20px;border-right:1px solid var(--line)}.trustitem:last-child{border:0}.trustitem strong{display:block;color:var(--yellow);font-size:1.55rem;line-height:1.25}.trustitem span{color:var(--muted);font-size:.88rem}
+section{padding:88px 0}.section-head{max-width:740px;margin-bottom:34px}.kicker{color:var(--yellow);text-transform:uppercase;font-weight:850;letter-spacing:1.5px;font-size:.76rem}.section-title{font-size:clamp(2rem,4vw,3.2rem);line-height:1.1;letter-spacing:-1px;margin:10px 0 15px}.lead{color:var(--muted);font-size:1.06rem;margin:0}.services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service{background:var(--panel);border:1px solid var(--line);border-radius:15px;overflow:hidden}.service img{width:100%;height:210px;object-fit:cover;display:block}.service-body{padding:22px}.service h3{margin:0 0 8px;font-size:1.2rem}.service p{margin:0;color:var(--muted);font-size:.95rem}.service .smalltag{display:inline-block;margin-top:15px;color:var(--yellow);font-size:.78rem;font-weight:850;text-transform:uppercase;letter-spacing:.8px}
+.fleet{background:#141920}.fleet-layout{display:grid;grid-template-columns:.85fr 1.15fr;gap:45px;align-items:center}.fleet-copy .lead{margin-bottom:22px}.fleet-list{display:grid;gap:12px;margin:24px 0}.fleet-row{display:flex;gap:14px;align-items:center;padding:13px 15px;background:#ffffff08;border:1px solid #ffffff15;border-radius:10px}.fleet-row b{color:var(--yellow);font-size:1.35rem;min-width:42px}.fleet-row span{color:#d8dde4}.fleet-photo{display:grid;grid-template-columns:1fr 1fr;gap:12px}.fleet-photo img{width:100%;height:210px;object-fit:cover;border-radius:12px}.fleet-photo img:first-child{grid-column:span 2;height:300px}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}.about-img{width:100%;height:450px;object-fit:cover;border-radius:16px;border:1px solid var(--line)}.checks{list-style:none;padding:0;margin:22px 0}.checks li{padding:8px 0;color:#dce1e7}.checks li:before{content:"✓";color:var(--yellow);font-weight:900;margin-right:12px}
+.gallery{background:#141920}.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.gallery-grid img{width:100%;height:220px;object-fit:cover;border-radius:11px;border:1px solid #ffffff16}.gallery-grid img:first-child{grid-column:span 2;grid-row:span 2;height:452px}
+.area-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:28px}.area-box{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:28px}.area-box h3{margin-top:0}.area-box p,.area-box li{color:var(--muted)}.note{border-left:3px solid var(--yellow);padding:12px 16px;background:#ffc92810;color:#dce1e7;border-radius:0 8px 8px 0;margin-top:20px;font-size:.92rem}
+.faq{background:#141920}.faq-list{display:grid;grid-template-columns:1fr 1fr;gap:14px}.faq-item{padding:22px;background:var(--panel);border:1px solid var(--line);border-radius:12px}.faq-item h3{margin:0 0 8px;font-size:1.03rem}.faq-item p{margin:0;color:var(--muted);font-size:.94rem}
+.contact{background:linear-gradient(135deg,#222831,#11161c)}.contact-panel{display:flex;align-items:center;justify-content:space-between;gap:28px;padding:38px;background:linear-gradient(120deg,#2a3039,#171c22);border:1px solid #414a56;border-radius:18px}.contact-panel h2{margin:0 0 8px;font-size:clamp(1.8rem,4vw,2.8rem)}.contact-panel p{margin:0;color:var(--muted)}.contact-number{display:block;font-size:clamp(1.7rem,3vw,2.5rem);font-weight:950;color:var(--yellow);text-decoration:none}
+footer{padding:28px 0;border-top:1px solid var(--line);color:#9ea7b2;font-size:.88rem}.footer-row{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.footer-brand{color:#fff;font-weight:900}
+@media(max-width:800px){.links{gap:12px}.links a:not(.nav-cta){display:none}.hero{min-height:610px;background-position:58% center}.trustgrid{grid-template-columns:1fr 1fr}.trustitem:nth-child(2){border-right:0}.trustitem:nth-child(-n+2){border-bottom:1px solid var(--line)}.services{grid-template-columns:1fr 1fr}.fleet-layout,.about-grid,.area-grid{grid-template-columns:1fr}.gallery-grid{grid-template-columns:1fr 1fr}.gallery-grid img:first-child{grid-column:span 2;grid-row:auto;height:270px}.contact-panel{align-items:flex-start;flex-direction:column}}
+@media(max-width:520px){section{padding:62px 0}.nav{min-height:66px}.brand{font-size:.98rem}.hero-inner{padding:75px 0 100px}h1{letter-spacing:-1.2px}.services{grid-template-columns:1fr}.service img{height:220px}.fleet-photo img{height:150px}.fleet-photo img:first-child{height:220px}.gallery-grid img{height:150px}.gallery-grid img:first-child{height:230px}.faq-list{grid-template-columns:1fr}.contact-panel{padding:25px}.trustitem{padding:17px 13px}.trustitem strong{font-size:1.3rem}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"AutomotiveBusiness","name":"Carvajal Motor 24H","url":"https://carvajalmotor24h.es/","telephone":"+34612258737","areaServed":{"@type":"AdministrativeArea","name":"Barcelona y alrededores"},"description":"Asistencia en carretera y reparaciones in situ en Barcelona y alrededores. Asistencia para baterías, arranque, pinchazos y mecánica ligera. Transporte de motocicletas.","openingHours":"Mo-Su 00:00-23:59"}
+</script>
 </head>
 <body>
-<header>
-  <div class="wrap nav">
-    <div class="brand">CARVAJAL <span>MOTOR 24H</span></div>
-    <nav class="navlinks" aria-label="Navegación">
-      <a href="#servicios">Servicios</a><a href="#zona">Zona de servicio</a><a href="#contacto">Contacto</a>
-    </nav>
-  </div>
-</header>
-
+<header><div class="wrap nav"><a class="brand" href="#inicio">CARVAJAL <b>MOTOR 24H</b></a><nav class="links" aria-label="Navegación principal"><a href="#servicios">Servicios</a><a href="#flota">Nuestra flota</a><a href="#nosotros">Empresa</a><a href="#zona">Cobertura</a><a class="nav-cta" href="tel:+34612258737">Llamar ahora</a></nav></div></header>
 <main>
-  <section class="hero">
-    <div class="wrap">
-      <span class="tag">BARCELONA Y ALREDEDORES</span>
-      <h1>Asistencia en carretera<br><span>y reparaciones in situ</span></h1>
-      <p>Te ayudamos con averías habituales, problemas de batería, arranque y pinchazos. También ofrecemos servicio de grúa para coches y motocicletas.</p>
-      <div class="actions">
-        <a class="btn btn-primary" href="tel:+34612258737">📞 Llamar al 612 258 737</a>
-        <a class="btn btn-secondary" href="https://wa.me/34612258737?text=Hola%20Carvajal%20Motor%2024H%2C%20necesito%20asistencia." target="_blank" rel="noopener">💬 WhatsApp</a>
-                  <a class="btn btn-secondary" href="mailto:carvajalmotorh@gmail.com">✉️ Enviar correo</a>
-      </div>
-      <div class="quick">
-        <div><strong>Asistencia en carretera</strong>Ayuda cuando tienes una avería.</div>
-        <div><strong>Reparaciones in situ</strong>Pequeñas intervenciones donde está el vehículo.</div>
-        <div><strong>Grúa para coches y motos</strong>Recogida y asistencia con grúa para coches y motocicletas.</div>
-      </div>
-    </div>
-  </section>
-
-  <section id="servicios">
-    <div class="wrap">
-      <h2 class="section-title">Nuestros servicios</h2>
-      <p class="intro">Soluciones prácticas para ayudarte a volver a la carretera. Consulta disponibilidad y explica qué le ocurre a tu vehículo.</p>
-      <div class="cards">
-        <article class="card">
-          <div class="icon">🚗</div>
-          <h3>Asistencia en carretera</h3>
-          <p>Asistencia ante problemas habituales del vehículo y pequeñas averías en carretera o en el lugar donde te encuentres.</p>
-        </article>
-        <article class="card">
-          <div class="icon">🔧</div>
-          <h3>Asistencia in situ</h3>
-          <p>Ayuda con baterías, problemas de arranque, pinchazos y mecánica ligera, según el tipo de avería y los medios necesarios.</p>
-        </article>
-        <article class="card">
-          <div class="icon">🚗🏍️</div>
-          <h3>Grúa para coches y motos</h3>
-          <p>Recogida y traslado de vehículos, según disponibilidad.</p>
-        </article>
-      </div>
-      <div class="notice"><strong>Disponibilidad:</strong> atención 24 horas según disponibilidad. Llámanos o escríbenos para confirmar el servicio.</div>
-    </div>
-  </section>
-
-  <section id="zona" class="area">
-    <div class="wrap area-grid">
-      <div>
-        <h2 class="section-title">Servicio en Barcelona y alrededores</h2>
-        <p class="intro">Atendemos Barcelona y municipios cercanos según disponibilidad y distancia. Contacta con nosotros para confirmar si podemos desplazarnos hasta tu ubicación.</p>
-        <a class="btn btn-primary" href="https://wa.me/34612258737?text=Hola%2C%20estoy%20en%20Barcelona%20y%20necesito%20asistencia." target="_blank" rel="noopener">Consultar por WhatsApp</a>
-      </div>
-      <div class="area-box">
-        <h3>Para atenderte más rápido</h3>
-        <p>Cuando contactes, indícanos:</p>
-        <ul>
-          <li>Tu ubicación o municipio.</li>
-          <li>Marca y modelo del vehículo.</li>
-          <li>Qué avería presenta.</li>
-          <li>Si necesitas asistencia para coche o transporte de moto.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section id="contacto" class="contact">
-    <div class="wrap contact-grid">
-      <div>
-        <h2 class="section-title">¿Necesitas asistencia?</h2>
-        <p class="intro">Contacta directamente con Carvajal Motor 24H y cuéntanos qué necesitas.</p>
-        <a class="phone" href="tel:+34612258737">612 258 737</a>
-      </div>
-      <div class="area-box">
-        <h3>Contacto directo</h3>
-        <p>📞 Teléfono: 612 258 737</p>
-        <p>💬 WhatsApp: respuesta según disponibilidad</p>
-        <div class="actions">
-          <a class="btn btn-primary" href="tel:+34612258737">Llamar ahora</a>
-          <a class="btn btn-secondary" href="https://wa.me/34612258737?text=Hola%20Carvajal%20Motor%2024H" target="_blank" rel="noopener">Abrir WhatsApp</a>
-        </div>
-      </div>
-    </div>
-  </section>
+<section class="hero" id="inicio"><div class="wrap"><div class="hero-inner"><span class="eyebrow">Barcelona y área metropolitana</span><h1>Asistencia en carretera.<br><span>Soluciones sobre ruedas.</span></h1><p>Asistencia en carretera y reparaciones in situ para ayudarte ante averías, problemas de batería, arranque y pinchazos. Un equipo con medios propios y una red de colaboradores.</p><div class="actions"><a class="btn primary" href="tel:+34612258737">☎ Llamar · 612 258 737</a><a class="btn secondary" href="https://wa.me/34612258737?text=Hola%20Carvajal%20Motor%2024H%2C%20necesito%20asistencia." target="_blank" rel="noopener">WhatsApp</a></div><div class="micro">Atención 24 horas · Barcelona y alrededores · Consulta disponibilidad</div></div></div></section>
+<div class="wrap trustbar"><div class="trustgrid"><div class="trustitem"><strong>2</strong><span>Furgonetas taller</span></div><div class="trustitem"><strong>3</strong><span>Grúas de distintas capacidades</span></div><div class="trustitem"><strong>5</strong><span>Vehículos en nuestro núcleo operativo</span></div><div class="trustitem"><strong>+</strong><span>Red de colaboradores externos</span></div></div></div>
+<section id="servicios"><div class="wrap"><div class="section-head"><span class="kicker">Qué hacemos</span><h2 class="section-title">Servicios de asistencia y mecánica ligera</h2><p class="lead">Atención práctica y profesional para incidencias habituales. Explícanos qué le ocurre a tu vehículo y valoramos la mejor solución.</p></div><div class="services">
+<article class="service"><img src="assets/asistencia-pinchazo-1.jpg" alt="Detalle de neumático con objeto incrustado"><div class="service-body"><h3>Pinchazos y neumáticos</h3><p>Asistencia ante pinchazos y problemas de rueda. Valoramos la reparación o solución adecuada según el estado del neumático.</p><span class="smalltag">Asistencia in situ</span></div></article>
+<article class="service"><img src="assets/asistencia-bateria.jpg" alt="Intervención en batería de vehículo"><div class="service-body"><h3>Batería y arranque</h3><p>Ayuda ante problemas de batería, falta de arranque y comprobaciones básicas en el lugar donde se encuentra el vehículo.</p><span class="smalltag">Asistencia en carretera</span></div></article>
+<article class="service"><img src="assets/reparacion-rueda.jpg" alt="Trabajo mecánico en la zona de rueda"><div class="service-body"><h3>Mecánica ligera</h3><p>Pequeñas intervenciones y comprobaciones para resolver incidencias habituales, según diagnóstico y medios disponibles.</p><span class="smalltag">Reparaciones in situ</span></div></article>
+</div><div class="note">El transporte/remolque que anunciamos directamente es exclusivamente para motocicletas. Para otros servicios, consulta disponibilidad y condiciones.</div></div></section>
+<section class="fleet" id="flota"><div class="wrap fleet-layout"><div class="fleet-copy"><span class="kicker">Medios operativos</span><h2 class="section-title">Una flota propia y una red de apoyo</h2><p class="lead">Contamos con una estructura de vehículos propia y colaboradores externos que nos permiten ampliar los recursos disponibles para atender servicios en Barcelona y alrededores.</p><div class="fleet-list"><div class="fleet-row"><b>02</b><span>Furgonetas taller para asistencia y reparaciones in situ</span></div><div class="fleet-row"><b>02</b><span>Grúas con MMA de 3.500 kg</span></div><div class="fleet-row"><b>01</b><span>Grúa con MMA de 4.500 kg</span></div><div class="fleet-row"><b>+</b><span>Colaboradores externos para ampliar la capacidad de respuesta</span></div></div><p class="micro">Los servicios se asignan según disponibilidad, características del vehículo y autorizaciones aplicables.</p></div><div class="fleet-photo"><img src="assets/flota-gruas-juntas.jpg" alt="Dos vehículos de grúa de la flota"><img src="assets/furgoneta-taller-frontal.jpg" alt="Furgoneta taller"><img src="assets/grua-vehiculo-carretera.jpg" alt="Servicio de asistencia con plataforma"></div></div></section>
+<section id="nosotros"><div class="wrap about-grid"><div><span class="kicker">Carvajal Motor 24H</span><h2 class="section-title">Cercanía, medios y capacidad de respuesta</h2><p class="lead">Trabajamos para ofrecer asistencia en carretera y soluciones in situ con un enfoque directo: escuchar la incidencia, valorar qué necesita el vehículo y coordinar los medios adecuados.</p><ul class="checks"><li>Furgonetas equipadas para intervenciones in situ.</li><li>Flota propia de vehículos de asistencia.</li><li>Red de colaboradores externos.</li><li>Atención en Barcelona y municipios cercanos.</li></ul><a class="btn primary" href="https://wa.me/34612258737?text=Hola%2C%20quiero%20consultar%20un%20servicio." target="_blank" rel="noopener">Consultar un servicio</a></div><img class="about-img" src="assets/interior-furgoneta-2.jpg" alt="Equipamiento interior de una furgoneta taller"></div></section>
+<section class="gallery"><div class="wrap"><div class="section-head"><span class="kicker">Trabajo real</span><h2 class="section-title">Nuestros medios y trabajos</h2><p class="lead">Una muestra de vehículos, equipamiento e intervenciones realizadas.</p></div><div class="gallery-grid"><img src="assets/grua-ferrari-plataforma.jpg" alt="Vehículo deportivo transportado sobre plataforma"><img src="assets/interior-furgoneta-1.jpg" alt="Equipamiento de furgoneta taller"><img src="assets/asistencia-pinchazo-2.jpg" alt="Detalle de pinchazo en neumático"><img src="assets/asistencia-mecanica.jpg" alt="Vehículos de asistencia"><img src="assets/furgoneta-taller-lateral.jpg" alt="Furgoneta de asistencia"></div></div></section>
+<section id="zona"><div class="wrap area-grid"><div><span class="kicker">Dónde trabajamos</span><h2 class="section-title">Barcelona y alrededores</h2><p class="lead">Prestamos servicios en Barcelona y área metropolitana. Indícanos tu ubicación para confirmar desplazamiento, disponibilidad y tipo de asistencia.</p><div class="actions"><a class="btn primary" href="https://wa.me/34612258737?text=Hola%2C%20necesito%20asistencia.%20Mi%20ubicaci%C3%B3n%20es%3A" target="_blank" rel="noopener">Enviar ubicación por WhatsApp</a></div></div><div class="area-box"><h3>Para agilizar la atención</h3><ul><li>Ubicación o municipio.</li><li>Marca y modelo del vehículo.</li><li>Descripción de la avería.</li><li>Si necesitas asistencia in situ o asistencia para motocicleta.</li></ul></div></div></section>
+<section class="faq"><div class="wrap"><div class="section-head"><span class="kicker">Información útil</span><h2 class="section-title">Preguntas frecuentes</h2></div><div class="faq-list"><article class="faq-item"><h3>¿En qué zona trabajáis?</h3><p>En Barcelona y alrededores. Confirma tu ubicación por teléfono o WhatsApp.</p></article><article class="faq-item"><h3>¿Ofrecéis asistencia 24 horas?</h3><p>Atendemos consultas las 24 horas. La asignación del servicio depende de disponibilidad y tipo de incidencia.</p></article><article class="faq-item"><h3>¿Qué tipo de reparaciones realizáis?</h3><p>Asistencia de batería y arranque, pinchazos y pequeñas intervenciones de mecánica ligera, según el caso.</p></article><article class="faq-item"><h3>¿Realizáis remolque de coches?</h3><p>El servicio de transporte/remolque que anunciamos directamente es exclusivamente para motocicletas. Consulta otras necesidades por teléfono.</p></article></div></div></section>
+<section class="contact" id="contacto"><div class="wrap"><div class="contact-panel"><div><span class="kicker">Estamos para ayudarte</span><h2>¿Necesitas asistencia?</h2><p>Cuéntanos dónde estás y qué le ocurre a tu vehículo.</p></div><div><a class="contact-number" href="tel:+34612258737">612 258 737</a><div class="actions"><a class="btn primary" href="tel:+34612258737">Llamar ahora</a><a class="btn secondary" href="https://wa.me/34612258737?text=Hola%20Carvajal%20Motor%2024H" target="_blank" rel="noopener">WhatsApp</a></div></div></div></div></section>
 </main>
-
-<footer>
-  <div class="wrap">
-    <span>© <span id="year"></span> Carvajal Motor 24H</span>
-    <span>Asistencia en carretera · Reparaciones in situ · Grúa para coches y motos</span>
-  </div>
-</footer>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-</body>
-</html>
+<footer><div class="wrap footer-row"><span class="footer-brand">CARVAJAL MOTOR 24H</span><span>Asistencia en carretera · Reparaciones in situ · Asistencia para motocicletas</span><span>© <span id="year"></span> Carvajal Motor 24H</span></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body></html>
