@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://carvajalmotor24h.es/sitemap.xml

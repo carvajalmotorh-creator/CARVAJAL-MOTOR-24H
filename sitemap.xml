@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://carvajalmotor24h.es/</loc>
-  </url>
+<url><loc>https://carvajalmotor24h.es/</loc></url>
+<url><loc>https://carvajalmotor24h.es/servicios.html</loc></url>
+<url><loc>https://carvajalmotor24h.es/zonas.html</loc></url>
+<url><loc>https://carvajalmotor24h.es/flota.html</loc></url>
+<url><loc>https://carvajalmotor24h.es/vehiculos.html</loc></url>
+<url><loc>https://carvajalmotor24h.es/empresa.html</loc></url>
 </urlset>
