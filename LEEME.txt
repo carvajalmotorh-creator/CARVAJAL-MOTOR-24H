@@ -1,0 +1,35 @@
+CARVAJAL MOTOR 24H — WEB MULTIPÁGINA
+
+CONTENIDO
+- index.html: inicio
+- servicios.html: servicios detallados
+- zonas.html: cobertura y localidades
+- flota.html: medios propios y colaboradores
+- vehiculos.html: compraventa e intermediación según existencias
+- empresa.html: empresa y contacto
+- styles.css / script.js: diseño adaptable, menú lateral, carruseles y formularios a WhatsApp
+- assets/: fotografías
+- CNAME: dominio personalizado
+- sitemap.xml / robots.txt: indexación
+
+PUBLICACIÓN EN GITHUB PAGES
+1. Conserva una copia de seguridad del repositorio actual.
+2. Sube el contenido de esta carpeta a la raíz de la rama main, reemplazando index.html y añadiendo los nuevos archivos y carpetas.
+3. Mantén CNAME con carvajalmotor24h.es. Puedes sustituir sitemap.xml por el incluido.
+4. No subas esta carpeta contenedora; sube los archivos que hay dentro.
+5. Espera a que GitHub Pages despliegue y comprueba https://carvajalmotor24h.es.
+
+NOTAS IMPORTANTES
+- El sitio presenta cobertura nacional e internacional como servicios coordinados; cada operación queda sujeta a confirmación de colaboradores, ruta, características y disponibilidad.
+- Mecánica ligera: cita previa y agenda.
+- Vehículos: no se muestra stock inventado; se consulta disponibilidad.
+- Verificar antes de publicar datos comerciales, autorizaciones, seguros y alcance real de cada servicio.
+- El correo info@carvajalmotor24h.es aparece como contacto genérico opcional; confirmar que existe antes de publicarlo o cambiarlo.
+
+
+ACTUALIZACIÓN VISUAL
+- Carrusel horizontal de servicios con fotografías propias.
+- Carrusel de localidades con imágenes panorámicas y enlaces de consulta por WhatsApp.
+- Cobertura nacional e internacional destacada.
+- La tarjeta de baterías usa asistencia-bateria-real.jpg.
+- Las imágenes de localidades se cargan desde Unsplash; requieren conexión a Internet.
