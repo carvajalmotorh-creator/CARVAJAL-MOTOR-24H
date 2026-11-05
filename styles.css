@@ -3,15 +3,26 @@
 /* Carruseles visuales de servicios y localidades */
 .carousel-wrap{position:relative}.carousel-controls{display:flex;justify-content:flex-end;gap:10px;margin:0 0 12px}.carousel-controls button{width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:#202832;color:#fff;font-size:1.7rem;line-height:1;cursor:pointer}.carousel-controls button:hover{background:var(--yellow);color:#111}.service-carousel,.zones-carousel{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:2px 2px 18px;scrollbar-width:thin;scrollbar-color:var(--yellow) #202832}.service-carousel>.card{flex:0 0 min(320px,82vw);scroll-snap-align:start;margin:0}.service-carousel>.card img{width:100%;height:190px;object-fit:cover;display:block}.zones-carousel .zone-photo{position:relative;isolation:isolate;flex:0 0 clamp(210px,23vw,270px);height:270px;border:1px solid #ffffff30;border-radius:16px;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:20px;text-decoration:none;scroll-snap-align:start;background:#1b2530}.zone-photo:before{content:"";position:absolute;inset:0;z-index:-2;background-image:var(--zone-img);background-position:center;background-size:cover;transition:transform .35s ease}.zone-photo:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,#00000005 10%,#00000022 38%,#000000db 100%)}.zone-photo:hover:before{transform:scale(1.07)}.zone-photo strong{font-size:1.22rem;line-height:1.2;text-shadow:0 2px 8px #000;font-weight:850}.zone-photo span{font-size:.9rem;color:#f1f3f5;margin-top:7px;text-shadow:0 2px 8px #000}.coverage-banner{padding:35px 0;background:linear-gradient(110deg,#171f29,#0b0e12);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.coverage-banner-inner{display:flex;align-items:center;justify-content:space-between;gap:30px}.coverage-banner .section-title{margin:5px 0}@media(max-width:700px){.coverage-banner-inner{align-items:flex-start;flex-direction:column}.zones-carousel .zone-photo{flex-basis:78vw;height:245px}.service-carousel>.card{flex-basis:82vw}.carousel-controls button{width:38px;height:38px}}
 
-/* FIX carrusel localidades: fondo visible, tarjetas legibles y ancho estable */
-.zones-carousel{display:flex!important;flex-wrap:nowrap!important;align-items:stretch;gap:14px;overflow-x:auto!important;overscroll-behavior-x:contain;padding:8px 4px 22px;scroll-snap-type:x mandatory;width:100%;}
-.zones-carousel .zone-photo{display:flex!important;position:relative;isolation:isolate;flex:0 0 250px!important;width:250px;min-width:250px;height:280px;min-height:280px;box-sizing:border-box;justify-content:flex-end;align-items:flex-start;padding:18px;border:1px solid #ffffff45;border-radius:15px;overflow:hidden;text-decoration:none;color:#fff;background-color:#26313d;background-image:linear-gradient(180deg,rgba(0,0,0,.04) 5%,rgba(0,0,0,.16) 35%,rgba(0,0,0,.88) 100%),var(--zone-img);background-position:center;background-size:cover;background-repeat:no-repeat;scroll-snap-align:start;transition:transform .2s,border-color .2s;}
-.zones-carousel .zone-photo:before{content:none!important;display:none!important}
-.zones-carousel .zone-photo:after{content:none!important;display:none!important}
-.zones-carousel .zone-photo strong{display:block;position:relative;z-index:1;margin-top:auto;font-size:1.2rem;line-height:1.2;font-weight:850;color:#fff;text-shadow:0 2px 8px #000,0 1px 2px #000;overflow-wrap:anywhere}
-.zones-carousel .zone-photo span{display:block;position:relative;z-index:1;font-size:.9rem;line-height:1.35;color:#fff;margin-top:7px;text-shadow:0 2px 8px #000}
-.zones-carousel .zone-photo:hover{transform:translateY(-3px);border-color:var(--yellow)}
-.zones-carousel-wrap .carousel-controls{display:flex;justify-content:flex-end;gap:10px;margin:0 0 14px}
-.zones-carousel-wrap .carousel-controls button{width:42px;height:42px;min-width:42px;border-radius:50%;border:1px solid var(--line);background:#202832;color:#fff;font-size:1.7rem;line-height:1;cursor:pointer}
-.zones-carousel-wrap .carousel-controls button:hover{background:var(--yellow);color:#111}
-@media(max-width:700px){.zones-carousel .zone-photo{flex-basis:78vw!important;width:78vw;min-width:78vw;height:250px;min-height:250px}}
+/* Galería de trabajos reales */
+.gallery-hero{background:linear-gradient(90deg,#080b0fee,#080b0f78),url('assets/flota-gruas-juntas.jpg') center 48%/cover no-repeat}
+.gallery-hero h1{max-width:850px;text-transform:uppercase;letter-spacing:-1.8px}
+.gallery-section{background:#f3f2ee;color:#15191e}
+.gallery-section .lead,.gallery-section .small{color:#5d6670}
+.gallery-section .kicker{color:#a77e00}
+.gallery-intro{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:28px}
+.gallery-intro>div{max-width:560px}.gallery-intro .lead{max-width:380px}
+.gallery-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:190px;gap:12px}
+.gallery-item{position:relative;display:block;overflow:hidden;padding:0;border:0;border-radius:2px;background:#d5d5d5;cursor:zoom-in;text-align:left}
+.gallery-item:nth-child(5n+1){grid-row:span 2}
+.gallery-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s ease}
+.gallery-item:hover img{transform:scale(1.055)}
+.gallery-caption{position:absolute;inset:auto 0 0;padding:30px 14px 12px;background:linear-gradient(transparent,#000b);color:white;display:flex;flex-direction:column;gap:3px;opacity:0;transition:opacity .2s}
+.gallery-item:hover .gallery-caption,.gallery-item:focus-visible .gallery-caption{opacity:1}
+.gallery-caption small{color:#f5d86a}.gallery-note{margin-top:20px}
+.lightbox{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;padding:5vh 7vw;background:#05070bf2}
+.lightbox.open{display:flex}.lightbox figure{margin:0;max-width:min(1100px,82vw);max-height:85vh;text-align:center}
+.lightbox figure img{display:block;max-width:100%;max-height:78vh;object-fit:contain;margin:auto;border-radius:8px}
+.lightbox figcaption{color:#fff;padding:12px}.lightbox button{position:absolute;border:1px solid #ffffff55;background:#171d25;color:white;width:46px;height:46px;border-radius:50%;font-size:2rem;cursor:pointer}
+.lightbox-close{top:22px;right:24px}.lightbox-prev{left:22px}.lightbox-next{right:22px}
+@media(max-width:850px){.gallery-grid{grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:165px}.gallery-intro{align-items:flex-start;flex-direction:column;gap:10px}}
+@media(max-width:560px){.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:145px;gap:8px}.gallery-item:nth-child(5n+1){grid-row:span 2}.gallery-caption{opacity:1;padding:24px 9px 8px;font-size:.8rem}.lightbox{padding:5vh 3vw}.lightbox figure{max-width:90vw}.lightbox-prev{left:8px}.lightbox-next{right:8px}.lightbox button{width:38px;height:38px;font-size:1.6rem}.gallery-section{padding:54px 0}}

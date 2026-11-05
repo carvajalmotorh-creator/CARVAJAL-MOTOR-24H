@@ -1,35 +1,16 @@
-CARVAJAL MOTOR 24H — WEB MULTIPÁGINA
+ACTUALIZACIÓN WEB CARVAJAL MOTOR 24H — NOVIEMBRE 2026
 
-CONTENIDO
-- index.html: inicio
-- servicios.html: servicios detallados
-- zonas.html: cobertura y localidades
-- flota.html: medios propios y colaboradores
-- vehiculos.html: compraventa e intermediación según existencias
-- empresa.html: empresa y contacto
-- styles.css / script.js: diseño adaptable, menú lateral, carruseles y formularios a WhatsApp
-- assets/: fotografías
-- CNAME: dominio personalizado
-- sitemap.xml / robots.txt: indexación
+Incluye la web multipágina, la nueva página galeria.html y las fotografías optimizadas.
 
-PUBLICACIÓN EN GITHUB PAGES
-1. Conserva una copia de seguridad del repositorio actual.
-2. Sube el contenido de esta carpeta a la raíz de la rama main, reemplazando index.html y añadiendo los nuevos archivos y carpetas.
-3. Mantén CNAME con carvajalmotor24h.es. Puedes sustituir sitemap.xml por el incluido.
-4. No subas esta carpeta contenedora; sube los archivos que hay dentro.
-5. Espera a que GitHub Pages despliegue y comprueba https://carvajalmotor24h.es.
+INSTALACIÓN EN GITHUB
+1. Descomprime este ZIP.
+2. Entra en el repositorio CARVAJAL-MOTOR-24H, rama main.
+3. Sube el contenido de la carpeta carvajal_motor_24h_web_actualizada (no la carpeta contenedora) a la raíz del repositorio.
+4. Acepta reemplazar los archivos existentes cuando GitHub lo solicite.
+5. Conserva CNAME y no cambies el dominio.
+6. Comprueba que assets quede en la raíz junto a index.html.
+7. Haz Commit changes. GitHub Pages publicará los cambios automáticamente.
 
-NOTAS IMPORTANTES
-- El sitio presenta cobertura nacional e internacional como servicios coordinados; cada operación queda sujeta a confirmación de colaboradores, ruta, características y disponibilidad.
-- Mecánica ligera: cita previa y agenda.
-- Vehículos: no se muestra stock inventado; se consulta disponibilidad.
-- Verificar antes de publicar datos comerciales, autorizaciones, seguros y alcance real de cada servicio.
-- El correo info@carvajalmotor24h.es aparece como contacto genérico opcional; confirmar que existe antes de publicarlo o cambiarlo.
+NUEVO: galeria.html con fotografías reales, cuadrícula adaptable, ampliación de imágenes, navegación anterior/siguiente, enlace Galería en menús y pies de página, acceso desde inicio y sitemap actualizado.
 
-
-ACTUALIZACIÓN VISUAL
-- Carrusel horizontal de servicios con fotografías propias.
-- Carrusel de localidades con imágenes panorámicas y enlaces de consulta por WhatsApp.
-- Cobertura nacional e internacional destacada.
-- La tarjeta de baterías usa asistencia-bateria-real.jpg.
-- Las imágenes de localidades se cargan desde Unsplash; requieren conexión a Internet.
+IMPORTANTE: revisa matrículas y logotipos visibles antes de publicar. El remolque anunciado directamente se limita a motocicletas.
